@@ -1,0 +1,40 @@
+header {
+  max-width: 1920px;
+  height: 72px;
+  background-color: white;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: '';
+}
+
+header h2 {
+  margin-top: 25px;
+  margin-left: 260px;
+}
+
+header .header__catalog {
+  margin-top: 25px;
+  margin-left: 511px;
+  color: black;
+  height: 22px;
+  /*cursor:not-allowed;*/
+}
+
+header .header__contacts {
+  margin-top: 25px;
+  margin-left: 84.5px;
+  color: #334458;
+  height: 22px;
+}
+
+header .header__contacts:hover {
+  color: black;
+}
+
+header .num {
+  margin-top: 25px;
+  margin-left: 205.5px;
+}

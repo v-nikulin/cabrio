@@ -1,0 +1,240 @@
+@import "_zero";
+
+
+@import "_header";
+
+body{
+   background:no-repeat right url(../img/header_right.png);
+   
+}
+
+@mixin ml {
+   margin-left: 419px;
+   font-size: 24px;
+   margin-right: 240px;
+   margin-top: -641px;
+   
+}
+
+.header__catalog{
+   cursor:context-menu;
+   &:hover{
+      color: yellow;
+   }
+}
+
+
+body{
+   background-color: rgba(148, 158, 172, 0.43);
+   overflow-x:hidden;
+}
+img{
+   margin-left: 720px;
+   margin-top: 168px;
+   transition: 0.8s ease;
+   }
+.desc{
+   
+   @include ml;
+   h1{
+      font-size: 36px;
+   }
+   h2{
+      margin-top: 19px;
+   }
+   button{
+      display: block;
+      margin-top: 38px;
+      border: 1px solid #000;
+      margin-right:1052px ;
+      background-color: rgb(255, 255, 255);
+      width: 334px;
+      height: 46px;
+      padding: 0;
+      font-size: 24px;
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+      &:hover{
+         background-color: rgb(226, 226, 226);
+         transition: 0.3s ease-in-out;
+      }
+   }
+   /*&__right{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 72px;
+      z-index: 2;
+   }*/
+   &__left{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      top: 0px;
+      width: 260px;
+      height: 985px;
+   }
+
+}
+
+.white{
+   position: absolute;
+   background-color: white;
+   width:100%;
+   height: 72px;
+   margin-top: 456px;
+   position:sticky;
+   z-index: 11;
+   h2{
+      position: absolute;
+      font-size: 48px;
+      margin-left: 260px;
+      margin-top: 15px;
+   }
+}
+.section{
+   &__photos{
+      
+      &__merc{
+         
+         margin-left: 260px;
+         margin-top: 82px;
+      }
+      &__ford{
+         margin-left: 260px;
+         margin-top: 172px;
+      }
+      &__ferrari{
+         margin-left: 260px;
+         margin-top: 172px;
+      }
+      &__bmw{
+         margin-left: 260px;
+         margin-top: 172px;
+      }
+      
+   }
+   &__logo{
+      margin-top: -10px;
+      &__merc{
+         margin-left: 260px;
+      }
+      &__ford{
+         margin-left: 84px;
+      }
+      &__ferrari{
+         margin-left: 46px;
+      }
+      &__bmw{
+         margin-left: 46px;
+      }
+   }
+   &__text{
+      display: inline-flex;
+      
+      color: white;
+      font-size: 36px;
+      &__merc{
+         position: absolute;
+         margin-top: 437px;
+         
+         margin-left: 1264px;
+      }
+      &__ford{
+         position: absolute;
+         margin-top: 1102px;
+         margin-left: 678px;
+      }
+      &__ferrari{
+         position: absolute;
+         margin-top: 1644px;
+         margin-left: 474px;
+         background-color: rgba(0, 0, 0, 0.418);
+         width: 264px;
+         height: 92px;
+         text-align: center;
+         padding-top: 30px;
+      }
+      &__bmw{
+         position: absolute;
+         margin-top: 2358px;
+         margin-left: 489px;
+      }
+   }
+   &__but{
+      
+      &__merc{
+         position: absolute;
+         background-color: white;
+         color:rgb(255, 255, 255);
+         background-color: transparent;
+         font-size: 24px;
+         border: 1px solid #FFFFFF;
+         width: 376px;
+         height: 67px;
+         margin-left: 1264px;
+         margin-top: 492px;  
+         transition: 0.5s ease-in-out;
+         &:hover{
+            background-color: rgba(255, 255, 255, 0.301);
+            transition: 0.3s ease-in-out;
+         }
+      }
+      &__ford{
+         position: absolute;
+         background-color: white;
+         color:rgb(255, 255, 255);
+         background-color: transparent;
+         font-size: 24px;
+         border: 1px solid #FFFFFF;
+         width: 376px;
+         height: 67px;
+         margin-top: 1158px;
+         margin-left: 678px;
+         transition: 0.5s ease-in-out;
+         &:hover{
+         background-color: rgba(255, 255, 255, 0.301);
+         transition: 0.3s ease-in-out;
+      }
+         }
+      &__ferrari{
+         position: absolute;  
+         color:rgb(255, 255, 255);
+         background-color: transparent;
+         font-size: 24px;
+         border: 1px solid #FFFFFF;
+         width: 376px;
+         height: 67px;
+         margin-top: 1751px;
+         margin-left: 437px;
+         background-color: rgba(0, 0, 0, 0.41);
+         transition: 0.5s ease-in-out;
+         &:hover{
+         background-color: rgba(255, 255, 255, 0.301);
+         transition: 0.3s ease-in-out;
+         }
+      }
+      &__bmw{
+         position: absolute;  
+         color:rgb(255, 255, 255);
+         background-color: transparent;
+         font-size: 24px;
+         border: 1px solid #FFFFFF;
+         width: 376px;
+         height: 67px;
+         margin-top: 2465px;
+         margin-left: 456px;
+         transition: 0.5s ease-in-out;
+         &:hover{
+         background-color: rgba(255, 255, 255, 0.301);
+         transition: 0.3s ease-in-out;
+         }
+      } 
+   }
+}
+.black{
+   background-color: rgba(75, 74, 74, 1);
+   height: 75px;
+}

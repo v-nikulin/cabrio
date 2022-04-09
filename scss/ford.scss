@@ -1,0 +1,37 @@
+@import "_zero";
+@import "_header";
+@import "_section";
+@import "_footer";
+body {
+   background-image: url(../img/ford_header.png);
+   background-repeat: no-repeat;
+   transition: 0.8s ease;
+   overflow-x: hidden;
+}
+.main-text {
+   color: white;
+
+   &__main {
+      padding-top: 558px;
+      font-size: 48px;
+      padding-left: 305px;
+   }
+   &__p {
+      font-size: 24px;
+      padding-left: 353px;
+   }
+   &__block {
+      width: 505px;
+      height: 102px;
+      border: 1px solid #ffffff;
+      position: absolute;
+      left: 260px;
+      top: 555px;
+   }
+}
+img {
+   transition: 0.8s ease;
+   &:hover {
+      transform: scale(1.1);
+   }
+}

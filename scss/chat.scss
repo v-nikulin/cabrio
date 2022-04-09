@@ -1,0 +1,106 @@
+@import "_zero";
+@import "_header";
+
+header{
+   background-color: #97ECDD;
+}
+body{
+   background-color: #D1D5DB;
+   
+}
+.block{
+   background-color: white;
+   width: 1400px;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+
+   &__logo{
+      margin-top: 219px;
+      margin-left: 655px;
+      
+   }
+   h1{
+      font-size: 18px;
+      text-align: center;
+      margin-top: 27px;
+      letter-spacing: 0.5px;
+      &::after{
+         content: url(../img/chat_green.png);
+         margin-left: 5px;
+      }
+   }
+   button{
+      width: 206px;
+      height: 45px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-top: 50px;
+      background-color: rgba(85, 227, 117, 1);
+      color: rgba(255, 255, 255, 1);
+      font-size: 18px;
+      line-height: 22px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: 0.3s ease-in-out;
+      &:hover{
+         box-shadow: none;
+         background-color: rgb(68, 184, 95);
+         letter-spacing: 0.1px;
+      }
+   }
+   &__textbox{
+      width: 792px;
+      height: 104px;
+      background-color: rgba(207, 248, 240, 0.53);
+      margin-top: 53px;
+      margin-left: 283px;
+      h2{
+         
+         font-size: 18px;
+         color: rgba(95, 94, 94, 0.7);
+         padding-top: 42px;
+         padding-left: 51px;
+         font-weight: 300;
+         
+      }
+   }
+   &__line{
+      border: 1px solid #000000;
+      position: absolute;
+      width: 792px;
+      height: 0px;
+      left: 543px;
+      top: 628px;
+   }
+   .tele{
+      text-align: center;
+      font-size: 18px;
+      margin-top: 184px;
+   }
+   &__a{
+      margin-left: 662px;
+      top: 720px;
+      font-size: 18px;
+      color: rgba(85, 167, 227, 1);
+      &:hover{
+         color: rgb(114, 45, 45);
+         transition: 0.3s ease-in-out;
+      }
+   }
+}
+footer{
+   background-color: rgba(38, 45, 67, 1);
+   height: 82px;
+   width: 100%;
+   .text-1{
+      color: rgba(166, 160, 160, 1);
+      margin-left: 253px;
+      padding-top: 6px;
+   }
+   .text-2{
+      color: rgba(255, 255, 255, 1);
+      margin-top: -14px;
+      margin-left: 603px;
+   }
+}

@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/*очищение всех отступов*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*изменение подсчета ширины блока*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*изменение линии обводки в некоторых браузерах*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/*изменение тегов на блочные*/
+nav, footer, header, aside {
+  display: block;
+}
+
+/*отключение самовольного увеличения шрифтов*/
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*включение наследственности*/
+input, button, textarea {
+  font-family: inherit;
+}
+
+/*убирание некоторых особенностей в разных браузерах*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*обнуление всех заголовков*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-------------------------------------------------------*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 1920px;
+  height: 72px;
+  background-color: white;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: '';
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header h2 {
+  margin-top: 25px;
+  margin-left: 260px;
+}
+
+header .audi {
+  cursor: context-menu;
+}
+
+header .header__catalog {
+  margin-top: 25px;
+  margin-left: 511px;
+  color: #004ba1;
+  height: 22px;
+  /*cursor:not-allowed;*/
+}
+
+header .header__catalog:hover {
+  color: #6b2525;
+  text-decoration: overline;
+  /* background-color:rgba(194, 194, 194, 0.24) ;*/
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header__contacts {
+  margin-top: 25px;
+  margin-left: 84.5px;
+  color: #004ba1;
+  height: 22px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header .header__contacts:hover {
+  color: #6b2525;
+  text-decoration: overline;
+  /* background-color:rgba(194, 194, 194, 0.24) ;*/
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .num {
+  margin-top: 25px;
+  margin-left: 205.5px;
+}
+
+body {
+  background: no-repeat right url(../img/header_right.png);
+}
+
+.header__catalog {
+  cursor: context-menu;
+}
+
+.header__catalog:hover {
+  color: yellow;
+}
+
+body {
+  background-color: rgba(32, 89, 169, 0.43);
+  overflow-x: hidden;
+}
+
+img {
+  margin-left: 720px;
+  margin-top: 168px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.desc {
+  margin-left: 419px;
+  font-size: 24px;
+  margin-right: 240px;
+  margin-top: -641px;
+  /*&__right{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 72px;
+      z-index: 2;
+   }*/
+}
+
+.desc h1 {
+  font-size: 36px;
+}
+
+.desc h2 {
+  margin-top: 19px;
+}
+
+.desc button {
+  display: block;
+  margin-top: 38px;
+  border: 1px solid #000;
+  margin-right: 1052px;
+  background-color: white;
+  width: 334px;
+  height: 46px;
+  padding: 0;
+  font-size: 24px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.desc button:hover {
+  background-color: #e2e2e2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.desc__left {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0px;
+  width: 260px;
+  height: 985px;
+}
+
+.white {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 72px;
+  margin-top: 456px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 11;
+}
+
+.white h2 {
+  position: absolute;
+  font-size: 48px;
+  margin-left: 260px;
+  margin-top: 15px;
+}
+
+.section__photos__merc {
+  margin-left: 260px;
+  margin-top: 82px;
+}
+
+.section__photos__ford {
+  margin-left: 260px;
+  margin-top: 172px;
+}
+
+.section__photos__ferrari {
+  margin-left: 260px;
+  margin-top: 172px;
+}
+
+.section__photos__bmw {
+  margin-left: 260px;
+  margin-top: 172px;
+}
+
+.section__logo {
+  margin-top: -10px;
+}
+
+.section__logo__bmw {
+  margin-left: 260px;
+}
+
+.section__logo__ford {
+  margin-left: 84px;
+}
+
+.section__logo__ferrari {
+  margin-left: 46px;
+}
+
+.section__logo__merc {
+  margin-left: 46px;
+}
+
+.section__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: white;
+  font-size: 36px;
+}
+
+.section__text__merc {
+  position: absolute;
+  margin-top: 437px;
+  margin-left: 1264px;
+}
+
+.section__text__ford {
+  position: absolute;
+  margin-top: 1102px;
+  margin-left: 678px;
+}
+
+.section__text__ferrari {
+  position: absolute;
+  margin-top: 1644px;
+  margin-left: 474px;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 264px;
+  height: 92px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.section__text__bmw {
+  position: absolute;
+  margin-top: 2358px;
+  margin-left: 489px;
+}
+
+.section__but__merc {
+  position: absolute;
+  background-color: white;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  border: 1px solid #FFFFFF;
+  width: 376px;
+  height: 67px;
+  margin-left: 1264px;
+  margin-top: 492px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section__but__merc:hover {
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section__but__ford {
+  position: absolute;
+  background-color: white;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  border: 1px solid #FFFFFF;
+  width: 376px;
+  height: 67px;
+  margin-top: 1158px;
+  margin-left: 678px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section__but__ford:hover {
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section__but__ferrari {
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  border: 1px solid #FFFFFF;
+  width: 376px;
+  height: 67px;
+  margin-top: 1751px;
+  margin-left: 437px;
+  background-color: rgba(0, 0, 0, 0.41);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section__but__ferrari:hover {
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section__but__bmw {
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  border: 1px solid #FFFFFF;
+  width: 376px;
+  height: 67px;
+  margin-top: 2465px;
+  margin-left: 456px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section__but__bmw:hover {
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.black {
+  background-color: #4b4a4a;
+  height: 75px;
+}

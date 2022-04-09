@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*очищение всех отступов*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*изменение подсчета ширины блока*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*изменение линии обводки в некоторых браузерах*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/*изменение тегов на блочные*/
+nav, footer, header, aside {
+  display: block;
+}
+
+/*отключение самовольного увеличения шрифтов*/
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*включение наследственности*/
+input, button, textarea {
+  font-family: inherit;
+}
+
+/*убирание некоторых особенностей в разных браузерах*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*обнуление всех заголовков*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-------------------------------------------------------*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 1920px;
+  height: 72px;
+  background-color: white;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: '';
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header h2 {
+  margin-top: 25px;
+  margin-left: 260px;
+}
+
+header .audi {
+  cursor: context-menu;
+}
+
+header .header__catalog {
+  margin-top: 25px;
+  margin-left: 511px;
+  color: #004ba1;
+  height: 22px;
+  /*cursor:not-allowed;*/
+}
+
+header .header__catalog:hover {
+  color: #6b2525;
+  text-decoration: overline;
+  /* background-color:rgba(194, 194, 194, 0.24) ;*/
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header__contacts {
+  margin-top: 25px;
+  margin-left: 84.5px;
+  color: #004ba1;
+  height: 22px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header .header__contacts:hover {
+  color: #6b2525;
+  text-decoration: overline;
+  /* background-color:rgba(194, 194, 194, 0.24) ;*/
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .num {
+  margin-top: 25px;
+  margin-left: 205.5px;
+}
+
+header {
+  background-color: #97ECDD;
+}
+
+body {
+  background-color: #D1D5DB;
+}
+
+.block {
+  background-color: white;
+  width: 1400px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block__logo {
+  margin-top: 219px;
+  margin-left: 655px;
+}
+
+.block h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 27px;
+  letter-spacing: 0.5px;
+}
+
+.block h1::after {
+  content: url(../img/chat_green.png);
+  margin-left: 5px;
+}
+
+.block button {
+  width: 206px;
+  height: 45px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-top: 50px;
+  background-color: #55e375;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.block button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #44b85f;
+  letter-spacing: 0.1px;
+}
+
+.block__textbox {
+  width: 792px;
+  height: 104px;
+  background-color: rgba(207, 248, 240, 0.53);
+  margin-top: 53px;
+  margin-left: 283px;
+}
+
+.block__textbox h2 {
+  font-size: 18px;
+  color: rgba(95, 94, 94, 0.7);
+  padding-top: 42px;
+  padding-left: 51px;
+  font-weight: 300;
+}
+
+.block__line {
+  border: 1px solid #000000;
+  position: absolute;
+  width: 792px;
+  height: 0px;
+  left: 543px;
+  top: 628px;
+}
+
+.block .tele {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 184px;
+}
+
+.block__a {
+  margin-left: 662px;
+  top: 720px;
+  font-size: 18px;
+  color: #55a7e3;
+}
+
+.block__a:hover {
+  color: #722d2d;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #262d43;
+  height: 82px;
+  width: 100%;
+}
+
+footer .text-1 {
+  color: #a6a0a0;
+  margin-left: 253px;
+  padding-top: 6px;
+}
+
+footer .text-2 {
+  color: white;
+  margin-top: -14px;
+  margin-left: 603px;
+}

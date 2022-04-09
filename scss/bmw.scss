@@ -1,0 +1,29 @@
+@import "_zero";
+@import "_header";
+@import "_section";
+@import "_footer";
+body {
+   background-image: url(../img/bmw_header.png);
+   background-repeat: no-repeat;
+}
+.main-text {
+   color: white;
+   padding-top: 237px;
+   padding-left: 260px;
+   &__main {
+      font-size: 48px;
+   }
+   &__p {
+      font-size: 30px;
+      margin-top: 19px;
+   }
+   &__none {
+      padding-top: 300px;
+   }
+}
+img {
+   transition: 0.8s ease;
+   &:hover {
+      transform: scale(1.1);
+   }
+}
